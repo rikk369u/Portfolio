@@ -1,0 +1,747 @@
+/*---- Generelle indstillinger ------ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #eadfd0;
+
+
+
+}
+
+img {
+    width: 100%;
+}
+
+
+section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+sectionwrapper {
+    margin-top: 1;
+}
+
+/*---- Generelle indstillinger slut ------ */
+
+/*---- forside ------ */
+
+#splash {
+    background-size: cover;
+    height: 600px;
+    position: absolute;
+}
+
+
+#billede {
+    height: 600px;
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    opacity: 90%;
+}
+
+
+#forside h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    display: flex;
+    position: absolute;
+    left: 115px;
+    top: 150px;
+    color: #5c5858;
+    letter-spacing: 0.2rem;
+    border-bottom: solid;
+    border-bottom-color: #5c5858;
+
+
+}
+
+#forside h2 {
+    font-size: 2rem;
+    font-weight: 100;
+    display: flex;
+    position: absolute;
+    left: 275px;
+    top: 250px;
+    color: #5c5858;
+    letter-spacing: 0.1rem;
+
+
+}
+
+#forside h3 {
+    position: absolute;
+    left: 420px;
+    top: 320px;
+    padding: 5rem 30rem 20rem 5rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#forside p {
+    position: absolute;
+    left: 415px;
+    top: 400px;
+    padding: 5rem 30rem 20rem 5rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: lighter;
+
+}
+
+.boks1 {
+    background-color: white;
+    opacity: 65%;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+
+.boks2 {
+    background-color: white;
+    opacity: 80%;
+    position: absolute;
+    left: 400px;
+    top: 400px;
+
+}
+
+#forside .boks1 {
+    height: 500px;
+    width: 600px;
+
+}
+
+#forside .boks2 {
+    height: 300px;
+    width: 600px;
+
+}
+
+.boks3 {
+    background-color: white;
+    opacity: 65%;
+    position: absolute;
+    right: 150px;
+    bottom: 88px;
+    height: 700px;
+    width: 600px;
+}
+
+.boks4 {
+    background-color: white;
+    opacity: 80%;
+    position: absolute;
+    left: 400px;
+    bottom: -650px;
+    height: 600px;
+    width: 600px;
+
+}
+
+
+/***--------------Menu-----------***/
+
+header {
+    background: #fcf8f3;
+    width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0 3rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+nav {
+    font-size: 1.2rem;
+    text-emphasis: thin;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+header li {
+    color: #cecdcd;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+header li a {
+    color: #918f8f;
+}
+
+header li:hover,
+header li:focus-within {
+    background: #e2d3c1;
+    cursor: pointer;
+}
+
+header li:focus-within a {
+    outline: none;
+}
+
+header ul li ul {
+    background: #a07d6a;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 7rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    text-align: left;
+
+}
+
+header ul li:hover > ul,
+header ul li:focus-within > ul,
+header ul li ul:hover,
+header ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+}
+
+header ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+/***--------------Menu SLUT-----------***/
+
+#om {
+    position: absolute;
+    margin: 0;
+    padding: 3rem 3rem 3rem 3rem;
+    bottom: -1000px;
+    background-image: url(billeder/splash.jpg);
+    background-size: cover;
+
+
+}
+
+#om .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#om .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0.6rem 0.6rem;
+    margin: 0.8rem;
+    max-width: 70ch;
+
+}
+
+#om h1 {
+    font-size: 2rem;
+    right: 300px;
+    top: 50px;
+    font-weight: 100;
+    display: flex;
+    position: absolute;
+    color: #5c5858;
+    letter-spacing: 0.2rem;
+    border-bottom: solid;
+    border-bottom-color: #5c5858;
+
+
+}
+
+#om h3 {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+    padding: 3rem 20rem 20rem 0rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #5c5858;
+}
+
+#om p {
+    position: absolute;
+    left: 725px;
+    top: 70px;
+    padding: 5rem 10rem 10rem 0rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: 100;
+
+}
+
+#kontakt {
+    position: absolute;
+    margin: 0;
+    padding: 3rem 3rem 3rem 3rem;
+    bottom: -1000px;
+
+
+
+}
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#kontakt h1 {
+
+    font-size: 3rem;
+    top: 150px;
+    left: 560px;
+    font-weight: 100;
+    display: flex;
+    position: absolute;
+    color: #5c5858;
+    letter-spacing: 0.2rem;
+    border-bottom: solid;
+    border-bottom-color: #5c5858;
+
+}
+
+#kontakt p {
+    position: absolute;
+    left: 240px;
+    top: 200px;
+    padding: 5rem 25rem 20rem 10rem;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: 100;
+
+
+}
+
+#kontakt .navn p {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: 100;
+    position: absolute;
+    left: 425px;
+    top: 300px;
+
+}
+
+#kontakt .tlf p {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: 100;
+    position: absolute;
+    left: 410px;
+    top: 350px;
+
+}
+
+
+#kontakt .mail p {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5;
+    font-weight: 100;
+    position: absolute;
+    left: 380px;
+    top: 400px;
+
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -1750px;
+    margin: 1;
+
+}
+
+#footer p {
+    word-spacing: 50rem;
+
+}
+
+/***--------------CV START-----------***/
+
+#cv {
+    background-image: url(billeder/mal.jpg);
+    background-size: cover;
+    height: 1550px;
+    position: absolute;
+}
+
+#cv .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#cv .col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    flex-basis: 400px;
+    padding: 3vw;
+    margin: 3vw;
+    background-color: white;
+    opacity: 70%;
+}
+
+#cv h1 {
+    font-size: 3rem;
+    font-weight: 100;
+    display: flex;
+    position: absolute;
+    left: 680px;
+    top: -25px;
+    color: #5c5858;
+    letter-spacing: 0.2rem;
+
+}
+
+#cv h2 {
+    color: #333030;
+    letter-spacing: 0.2rem;
+}
+
+#cv h3 {
+    color: #3b3a3a;
+    letter-spacing: 0.2rem;
+}
+
+#cv p {
+    color: #5c5858;
+}
+
+#cv li {
+    color: #5c5858;
+    letter-spacing: 0.2rem;
+
+}
+
+@media only screen and (min-width:600px) {
+    #forside .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /***--------PORTFOLIO START---------***/
+
+    #portfolio {
+        background-image: url(billeder/mal.jpg);
+        background-size: cover;
+        height: 1850px;
+        position: absolute;
+    }
+
+    #portfolio .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #portfolio .col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-basis: 400px;
+        padding: 3vw;
+        margin: 3vw;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    #portfolio h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        display: flex;
+        position: absolute;
+        left: 550px;
+        top: -25px;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    #portfolio h2 {
+        font-size: 1rem;
+        font-weight: 100;
+        display: flex;
+        position: absolute;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    /***--------------WEB START-----------***/
+
+    #web {
+        background-image: url(billeder/splash.jpg);
+        background-size: cover;
+        height: 1000px;
+        position: absolute;
+    }
+
+    #web .col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-basis: 400px;
+        padding: 3vw;
+        margin: 3vw;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    #web .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    #web h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+        margin: 3vw;
+
+
+    }
+
+    #web h2 {
+        font-size: 2rem;
+        font-weight: 100;
+        position: absolute;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    #web p {
+        color: #5c5858;
+
+    }
+
+    #web img {
+        width: 600px;
+    }
+
+
+    /***--------------UX START-----------***/
+
+
+    #ux {
+        background-image: url(billeder/splash.jpg);
+        background-size: cover;
+        height: 1000px;
+        position: absolute;
+    }
+
+    #ux .col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-basis: 400px;
+        padding: 3vw;
+        margin: 3vw;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    #ux .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+
+    }
+
+    #ux h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+        margin: 3vw;
+
+
+    }
+
+    #ux h2 {
+        font-size: 2rem;
+        font-weight: 100;
+        position: absolute;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    #ux p {
+        color: #5c5858;
+
+    }
+
+    #ux img {
+        width: 600px;
+    }
+
+    /***----------ANIMATION START--------***/
+
+
+    #animation {
+        background-image: url(billeder/splash.jpg);
+        background-size: cover;
+        height: 1000px;
+        position: absolute;
+    }
+
+    #animation .col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-basis: 400px;
+        padding: 3vw;
+        margin: 3vw;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    #animation .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #animation h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+        margin: 3vw;
+
+
+    }
+
+    #animation h2 {
+        font-size: 2rem;
+        font-weight: 100;
+        position: absolute;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    #animation p {
+        color: #5c5858;
+
+    }
+
+    #animation img {
+        width: 600px;
+    }
+
+    /***----------INDHOLD START--------***/
+
+    #indhold {
+        background-image: url(billeder/splash.jpg);
+        background-size: cover;
+        height: 1000px;
+        position: absolute;
+    }
+
+    #indhold .col {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+        flex-basis: 400px;
+        padding: 3vw;
+        margin: 3vw;
+        background-color: white;
+        opacity: 85%;
+    }
+
+    #indhold .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #indhold h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+        margin: 3vw;
+
+
+    }
+
+    #indhold h2 {
+        font-size: 2rem;
+        font-weight: 100;
+        position: absolute;
+        color: #5c5858;
+        letter-spacing: 0.2rem;
+
+    }
+
+    #indhold p {
+        color: #5c5858;
+
+    }
+
+    #indhold img {
+        width: 600px;
+    }
